@@ -3,6 +3,35 @@ Modified files: recently changed
 Staged files: marked to be saved
 Committed files: have been saved
 
+USING GIT
+
+1. git config --global user.name "zncu"
+
+2. git config --global user.email ...@gmail.com
+
+3. git config --global core.editor "vim" # Set editor as vim
+
+4. git config --global core.editor "edit -w" # Set editor as Text Wrangler Mac
+
+5. git config --list # Show settings
+
+6. git help OR git help [COMMAND] OR git help add
+
+ ---------------- Track a directory ----------------
+
+a. Go to directory
+
+b. ls -a shows all files
+
+c. git init # Creates the .git directory
+
+	9. ---------------- Ignore Files ----------------
+
+
+a. Create a .gitignore file
+
+b. https://github.com/github/gitignore
+
  
 git help add
 
