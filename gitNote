@@ -103,6 +103,21 @@ Git
             作用:
                 Remote Git -> Local Git -> Workspace
         
+        
+        1.  checkout master
+        2.  new branch bbb
+        3.  checkout bbb
+        4.  new file Demo.java
+        5.  edit Demo.java 
+        6.  add, commit, push, pull request
+        7.  checkout master
+        8.  pull
+        9.  checkout bbb
+        10. merge master        
+        11. (close and reopen)edit Demo.java
+        12. add, commit, push
+        13. look pull request
+        14. @remote merge
                 
     
    
