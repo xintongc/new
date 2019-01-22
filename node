@@ -1,0 +1,33 @@
+DOM
+For representing objects in HTML documents.
+All area in a web documents are object.
+
+// var is optional when declaire a variable
+
+document.write(name)
+
+function sayHi(){
+  document.write('Hi');
+}
+  
+sayHi();  //call the function
+
+Event Handling
+
+<a onclick="makeAlert()"> Click for Alert </a>
+<script>
+  function makeAlert(){
+    alert("You clicked the link!");
+  }
+ </script>
+ 
+ 
+ function getSum(num1, num2){
+    if(!num2){
+      num2 = 4;   //if there is no num2, make it 4
+     }
+     alert(num1 + num2);
+     
+     getSum(3);
+     
+      
