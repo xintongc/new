@@ -41,3 +41,13 @@ $("div")  will select All <div> tags
 $("#myDiv")  will select the div with the id of myDiv
 $("p.someClass")  will select the p with the class of someClass
 
+$("a").click(function(){
+  //do something when a link (<a> tag) is clicked
+});
+
+$("#myElement").hide(function(){
+  // do something once the element is hidden
+})
+
+$("#myElement").show
+$("#myElement").toggle
