@@ -31,3 +31,13 @@ Event Handling
      getSum(3);
      
       
+JQuery
+
+$(document).ready(function(){
+});
+
+Using Selectors
+$("div")  will select All <div> tags
+$("#myDiv")  will select the div with the id of myDiv
+$("p.someClass")  will select the p with the class of someClass
+
