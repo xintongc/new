@@ -51,3 +51,12 @@ $("#myElement").hide(function(){
 
 $("#myElement").show
 $("#myElement").toggle
+
+$(document).ready(function(){
+  $('.lightOff').click(function(){
+    $('.lightOn').hide();
+  }
+//same as
+  $('.lightOff').on('click',function)
+  $('.lightOff').bind('click',function)
+});
