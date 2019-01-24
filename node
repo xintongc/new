@@ -60,3 +60,9 @@ $(document).ready(function(){
   $('.lightOff').on('click',function)
   $('.lightOff').bind('click',function)
 });
+
+$ heroku login
+$ heroku git:remote -a parse-server-codec
+$ git push heroku master
+
+
