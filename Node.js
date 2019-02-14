@@ -23,3 +23,28 @@ async function getProcessedData(url) {
   }
   return processDataInWorker(v);
 }
+
+
+
+To use the await keyword, you MUST have written the async keyword in the function whose block contains the code. For example:
+const EditMessage = async (id, content) => {
+    const Message = await channel.fetchMessage(id); // Async
+    return Message.edit(content);
+}
+async function EditMessage(id, content) {
+    const Message = await channel.fetchMessage(id); // Async
+    return Message.edit(content);
+}
+
+However, if you have a function inside another, for example:
+const EditMessage = async (id, content) => {
+    const Message = await channel.fetchMessage(id);
+    setTimeout(() => {
+        await Message.edit(content);
+        Message.channel.send("Edited!");
+    }, 5000);
+}
+That will throw an error:
+        await Message.edit(content);
+              ^^^^^^^
+SyntaxError: Unexpected identifier
